@@ -10,3 +10,10 @@
 .tmp_versions/
 Module.symvers
 modules.order
+
+# CMake build directories
+/build/
+/build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
