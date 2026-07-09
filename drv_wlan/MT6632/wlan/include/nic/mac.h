@@ -1803,7 +1803,7 @@ typedef struct _IE_TPC_REPORT_T {
 typedef struct _IE_SUPPORTED_CHANNELS_T {
 	UINT_8 ucId;
 	UINT_8 ucLength;
-	UINT_8 ucChannelNum[0];
+	UINT_8 ucChannelNum[];
 } __KAL_ATTRIB_PACKED__ IE_SUPPORTED_CHANNELS_T, *P_IE_SUPPORTED_CHANNELS_T;
 
 /* 7.3.2.20 Channel Switch Announcement element*/

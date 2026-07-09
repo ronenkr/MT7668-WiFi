@@ -69,7 +69,7 @@ typedef struct _MSG_P2P_SCAN_REQUEST_T {
 	PUINT_8 pucIEBuf;
 	UINT_32 u4IELen;
 	BOOLEAN fgIsAbort;
-	RF_CHANNEL_INFO_T arChannelListInfo[1];
+	RF_CHANNEL_INFO_T arChannelListInfo[];
 } MSG_P2P_SCAN_REQUEST_T, *P_MSG_P2P_SCAN_REQUEST_T;
 
 typedef struct _MSG_P2P_CHNL_REQUEST_T {
