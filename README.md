@@ -17,6 +17,15 @@ USB IDs matched by `drv_wlan/MT6632/wlan/os/linux/hif/usb/usb.c`:
 
 The Samsung dongle is a combo WiFi+Bluetooth part; only the WiFi interface (vendor-specific, class `ff/ff/ff`) is claimed here. Bluetooth is handled separately by the mainline `btusb` driver (it already has MT7663U/MT7668U support — see `drivers/bluetooth/btusb.c`).
 
+## Markings on the module
+WCT734M
+A3LWCT730M
+
+## Pinout
+Remove the module from TV with the harness, there are 2 rows of pins ,
+connect the green pin to green of USB, white to white, and black to black (all next to each other)
+and the VCC/RED connect behind the Green pin (it's a black with white stripe pin)
+
 ## Build & install
 
 Requires kernel headers for your running kernel (`sudo apt install linux-headers-$(uname -r)`) and CMake 3.16+.
